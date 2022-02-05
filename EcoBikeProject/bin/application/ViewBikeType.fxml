@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ViewBikeTypeController">
+   <children>
+      <ImageView fitHeight="43.0" fitWidth="49.0" layoutX="20.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/image/home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="130.0" layoutY="497.0" prefHeight="18.0" prefWidth="325.0" text="              EcoBikes hân hạnh được phục vụ quý khách" textFill="#09630c">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="25.0" prefHeight="18.0" prefWidth="111.0" text=" EcoBikes" textFill="#09862a">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnHome" layoutX="327.0" layoutY="29.0" mnemonicParsing="false" onAction="#onclickHome" prefHeight="26.0" prefWidth="79.0" text="Home" textFill="#aca5a5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnViewInfor" layoutX="406.0" layoutY="29.0" mnemonicParsing="false" onAction="#onclickViewInfor" prefHeight="26.0" prefWidth="79.0" text="Infor" textFill="#aca5a5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLogout" layoutX="485.0" layoutY="29.0" mnemonicParsing="false" onAction="#onclickLogout" prefHeight="26.0" prefWidth="79.0" text="Logout" textFill="#aeabab">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="21.0" layoutY="95.0" prefHeight="372.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="43.20001220703125" text="Id" />
+          <TableColumn fx:id="columnType" prefWidth="76.79998779296875" text="Type" />
+            <TableColumn fx:id="columnPreprice" prefWidth="84.0" text="Preprice" />
+            <TableColumn fx:id="columnPrice" prefWidth="79.20001220703125" text="Price" />
+            <TableColumn fx:id="columnDescription" prefWidth="199.20001220703125" text="Description" />
+            <TableColumn fx:id="columnDeposit" minWidth="0.0" prefWidth="75.99997558593748" text="Deposit" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
